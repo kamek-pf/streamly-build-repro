@@ -1,0 +1,10 @@
+packages: 
+    streamly-build-repro.cabal
+
+with-compiler: ghc-9.4.4
+
+-- Package constrains, can be used to enable flags or select specific versions
+constraints:
+    streamly == 0.9.0,
+    streamly +use-unliftio
+
